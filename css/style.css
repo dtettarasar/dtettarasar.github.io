@@ -1,0 +1,546 @@
+
+body {
+  background-color: #ecf0f1;
+  margin: 0;
+  font-family: 'Baloo 2';
+}
+
+.anchor{
+    display: block;
+    height: 125px;
+    margin-top: -125px;
+    visibility: hidden;
+}
+
+/* style menu */
+
+header {
+  background-color: #182b61;
+  width: 100%;
+  color: #ecf0f1;
+  display: flex;
+  flex-wrap: wrap;
+  /*flex-direction: row;
+  justify-content: space-between;*/
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+}
+
+header ul, header p {
+  margin: 0.625em;
+  padding: 0;
+}
+
+header p {
+  font-size: 1.875em;
+}
+
+header ul {
+  display: flex;
+  /*justify-content: space-around;*/
+  justify-content: center;
+}
+
+header ul li {
+  list-style-type: none;
+  margin: 0 auto;
+  border-right: 0.125em solid #ecf0f1;
+  padding: 0.3125em;
+}
+
+header ul li:last-child {
+  border: none;
+}
+
+ #navbar a:visited,
+ #navbar a:link,
+ .button:visited,
+ .button:link{
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+#navbar ul li,
+.button{
+  -webkit-transition: background-color 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: background-color 0.5s;
+}
+
+#navbar ul li a:link{
+  -webkit-transition: color 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: color 0.5s;
+}
+
+#navbar ul li:hover,
+.button:hover {
+  background-color: #3498db;
+}
+
+.button {
+  background-color: #182b61;
+  padding: 10px;
+  font-size: 24px;
+  margin-top:10px;
+  display: inline-block;
+}
+
+/*
+#navbar ul li:hover a:link,
+#navbar ul li:hover a:visited{
+  color: #2c3e50;
+}*/
+
+/* fin style menu */
+
+/* style welcome section */
+
+.welcome-container {
+  background: url(../img/img-intro.jpg);
+  background-size: auto;
+  background-size: cover;
+}
+
+#welcome-section {
+  background: rgba(24, 43, 97, 0.5);
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#welcome-section h1, #welcome-section p {
+  text-align: center;
+  color: #ecf0f1;
+}
+
+#welcome-section h1 {
+  margin-top: 0;
+}
+
+.welcome-separator {
+  height: 2px;
+  width: 70%;
+  background-color: #ecf0f1;
+  margin: 0 auto;
+}
+
+#welcome-section p {
+  font-size: 1.25em;
+}
+
+.picto-welcome-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.picto-welcome img {
+  height: 90px;
+}
+
+/* fin style welcome section */
+
+/* style entête section */
+
+.entete {
+  background-color: #182b61;
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.entete h2 {
+  margin-top: 0;
+  text-align: center;
+  color:#ecf0f1;
+  font-size: 18px;
+}
+
+.line-entete {
+  height: 5px;
+  background-color: #ecf0f1;
+  width: 200px;
+  flex: 1;
+}
+
+.entete-picto {
+  display: flex;
+  align-items: center;
+}
+
+.entete-picto img {
+  flex: 0 0 50px;
+  max-width:50px;
+  margin: auto 10px;
+}
+
+/* fin style entête section */
+
+/* style about me section */
+
+.about-me-content {
+  display: flex;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-me-content img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.about-me-text {
+  flex: 0 1 600px;
+  color:#182b61;
+}
+
+.about-me-img {
+  flex: 0 1 250px
+}
+
+.about-me-img,
+.about-me-text {
+  margin: auto 10px;
+}
+
+/* fin style about me section */
+
+/* style portfolio section */
+
+#projects {
+  padding: 30px;
+}
+
+.portfolio-headline {
+  border: solid 4px #182b61;
+  color:#182b61;
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #ecf0f1;
+  -webkit-transition: color 0.5s, background-color 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.active, .portfolio-headline:hover{
+  background-color: #3498db;
+  color:#ecf0f1;
+}
+
+.portfolio-presentation {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  max-height:0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: max-height 0.5s;
+}
+
+.portfolio-text {
+  margin: 30px;
+  flex: 0 1 750px;
+}
+
+.portfolio-img {
+  flex: 0 1 550px
+}
+
+.portfolio-img img {
+  width: 100%;
+}
+
+/* fin style portfolio section */
+
+/* style resume section */
+
+.resume-section,
+.xp-content,
+.resume-sep,
+.skill-row,
+.diploma-content {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.resume-section,
+.xp-content,
+.diploma-content,
+.skill-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.resume-section {
+  background-color: #3498db;
+}
+
+.resume-sep {
+  background-color: #182b61;
+  height: 4px;
+}
+
+.resume-section img {
+  max-width:50px;
+}
+
+.resume-section h3 {
+  font-size:24px;
+  color:#ecf0f1
+}
+
+.resume-picto {
+  display: flex;
+  align-items: center;
+  flex: 0 1 60px;
+}
+
+.xp-img {
+  flex: 0 1 150px;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.xp-img img{
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.xp-text,
+.diploma-text {
+  margin: 20px;
+  color: #182b61;
+}
+
+.xp-text {
+  flex: 1 1 600px;
+}
+
+.xp-company {
+  font-size:20px;
+}
+
+.xp-company p {
+  margin-bottom: 10px;
+}
+
+.xp-title *,
+.diploma-title *{
+  display: inline-block;
+  margin: 0;
+}
+
+.xp-job-name,
+.diploma-name {
+    padding-right: 7px;
+    border-right: 2px solid #182b61;
+    font-weight: 700;
+}
+
+.diploma-img {
+  flex: 0 1 250px;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.diploma-img img{
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+.diploma-text {
+  flex: 1 1 500px;
+}
+
+.skill-type {
+  text-align: center;
+  color: #182b61;
+  font-size: 18px;
+}
+
+.skill-row {
+  justify-content: space-between;
+}
+
+.skill-box {
+  flex: 1 0 25%;
+  margin: 15px;
+}
+
+.skill-box p {
+  color: #182b61;
+  text-align: center;
+  font-size: 24px;
+}
+
+.skill-box img {
+  margin: 0 auto;
+  width: 110px;
+  display: block;
+}
+
+/* fin style resume section */
+
+/* style footer */
+
+footer {
+  background-color: #182b61;
+  color:#ecf0f1;
+  margin:0;
+  padding: 20px;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer p:first-child {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logo-footer a {
+  width: 80px;
+}
+
+/* fin style footer */
+
+/* style bouton to top */
+
+.btn-to-top {
+  height: 60px;
+  width: 60px;
+  background-color: #ecf0f1;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 40px;
+  border: solid 4px #3498db;
+  display: none;
+  -webkit-transition: background-color 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: background-color 0.5s;
+}
+
+svg {
+  display: block;
+  margin: 10px auto 10px auto;
+  fill:#2c3e50;
+  -webkit-transition: fill 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: fill 0.5s;
+}
+
+.btn-to-top:hover {
+  background-color: #3498db;
+}
+
+.btn-to-top:hover svg {
+  fill:#ecf0f1;
+}
+
+/* fin style bouton to top */
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header ul {
+    justify-content: space-around;
+  }
+
+  .anchor{
+      height: 75px;
+      margin-top: -75px;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  #welcome-section h1 {
+    font-size: 2.5em;
+  }
+  #welcome-section p {
+    font-size: 1.5625em;
+  }
+
+  .picto-welcome img {
+    height: 100px;
+  }
+
+  .entete h2,
+  .xp-company,
+  .xp-title,
+  .diploma-title {
+    font-size: 20px;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #welcome-section h1 {
+    font-size: 3.125em;
+  }
+
+  .picto-welcome img {
+    height: 110px;
+  }
+
+  .entete h2,
+  .xp-company,
+  .xp-title,
+  .diploma-title {
+    font-size: 25px;
+  }
+
+  .skill-type {
+    font-size:22px;
+  }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  #welcome-section h1 {
+    font-size: 3.5em;
+  }
+  #welcome-section p {
+    font-size: 2.5625em;
+  }
+  .picto-welcome img {
+    height: 120px;
+  }
+
+  .xp-company {
+    font-size:28px;
+  }
+
+  .entete h2{
+    font-size: 30px;
+  }
+
+  .skill-type {
+    font-size:25px;
+  }
+
+}
