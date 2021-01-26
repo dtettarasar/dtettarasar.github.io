@@ -75,7 +75,7 @@ header ul li:last-child {
 
 #navbar ul li:hover,
 .button:hover {
-  background-color: #3498db;
+  background-color:#4D67B0;
 }
 
 .button {
@@ -229,7 +229,7 @@ header ul li:last-child {
 }
 
 .active, .portfolio-headline:hover{
-  background-color: #3498db;
+  background-color: #4D67B0;
   color:#ecf0f1;
 }
 
@@ -281,7 +281,7 @@ header ul li:last-child {
 }
 
 .resume-section {
-  background-color: #3498db;
+  background-color:#4D67B0;
 }
 
 .resume-sep {
@@ -433,7 +433,7 @@ footer p:first-child {
   bottom: 30px;
   right: 30px;
   border-radius: 40px;
-  border: solid 4px #3498db;
+  border: solid 4px #4D67B0;
   display: none;
   -webkit-transition: background-color 0.5s; /* For Safari 3.1 to 6.0 */
   transition: background-color 0.5s;
@@ -442,13 +442,13 @@ footer p:first-child {
 svg {
   display: block;
   margin: 10px auto 10px auto;
-  fill:#2c3e50;
+  fill: #182C61;
   -webkit-transition: fill 0.5s; /* For Safari 3.1 to 6.0 */
   transition: fill 0.5s;
 }
 
 .btn-to-top:hover {
-  background-color: #3498db;
+  background-color: #4D67B0;
 }
 
 .btn-to-top:hover svg {
