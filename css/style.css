@@ -288,6 +288,7 @@ header ul li:last-child {
 
 .resume-section {
   background-color:#4D67B0;
+  justify-content: center;
 }
 
 .resume-title h3 {
