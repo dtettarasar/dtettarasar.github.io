@@ -393,6 +393,7 @@ header ul li:last-child {
   text-align: center;
   color: #182b61;
   font-size: 18px;
+  font-weight: 600;
 }
 
 .skill-row {
@@ -433,7 +434,7 @@ footer p {
 
 footer p:first-child {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .logo-footer {
