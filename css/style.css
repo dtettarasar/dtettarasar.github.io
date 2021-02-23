@@ -216,6 +216,12 @@ header ul li:last-child {
 
 #projects {
   padding: 30px;
+  display:none;
+}
+
+.projects-section,
+#projects {
+  padding: 30px;
 }
 
 .portfolio-headline {
