@@ -109,6 +109,7 @@ header ul li:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 50px;
 }
 
 #welcome-section h1, #welcome-section p {
